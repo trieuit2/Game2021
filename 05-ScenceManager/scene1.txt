@@ -160,3 +160,5 @@
 # type	l	t	ani_set_id	r	b	scene_id
 50	300	98	0	316	150	2
 
+[TILEMAP]
+10	textures\world1-1\tilesheet.png	textures\world1-1\matrix.txt	14	12	27	177	16	16

@@ -13,6 +13,8 @@
 #include "Scence.h"
 
 using namespace std;
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
 
 #define KEYBOARD_BUFFER_SIZE 1024
 
@@ -63,6 +65,11 @@ public:
 	int GetScreenWidth() { return screen_width; }
 	int GetScreenHeight() { return screen_height; }
 
+	float GetCamPosX() { return cam_x; }
+	float GetCamPosY() { return cam_y; }
+	void SetCamPos(float x, float y) { cam_x = x; cam_y = y; }
+	void GetCamPos(float& x, float& y) { x = cam_x; y = cam_y; }
+
 	static void SweptAABB(
 		float ml,			// move left 
 		float mt,			// move top
@@ -82,7 +89,6 @@ public:
 	LPDIRECT3DSURFACE9 GetBackBuffer() { return backBuffer; }
 	LPD3DXSPRITE GetSpriteHandler() { return this->spriteHandler; }
 
-	void SetCamPos(float x, float y) { cam_x = x; cam_y = y; }
 
 	static CGame * GetInstance();
 
