@@ -26,8 +26,8 @@
 
 #include "PlayScence.h"
 
-#define WINDOW_CLASS_NAME L"SampleWindow"
-#define MAIN_WINDOW_TITLE L"SAMPLE 05 - SCENCE MANAGER"
+#define WINDOW_CLASS_NAME L"Mr. Gimmick"
+#define MAIN_WINDOW_TITLE L"Mr. Gimmick NES"
 
 #define BACKGROUND_COLOR D3DCOLOR_XRGB(255, 255, 200)
 #define SCREEN_WIDTH 320
