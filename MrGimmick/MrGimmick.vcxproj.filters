@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BlackEnemy.cpp">
+      <Filter>Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackBoss.cpp">
+      <Filter>Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Worm.cpp">
+      <Filter>Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Boom.cpp">
+      <Filter>Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Animations.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueFire.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="BrickPink.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Chain.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Cogwheel.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CogwheelSmall.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Conveyor.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="InclinedBrick.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Medicine.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Star.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Swing.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Tube.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Zone.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEventHandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadtree.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GimmickDieEffect.cpp">
+      <Filter>Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="Gimmick.cpp">
+      <Filter>Gimmick</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constant.h" />
+    <ClInclude Include="BlackBoss.h">
+      <Filter>Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackEnemy.h">
+      <Filter>Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Worm.h">
+      <Filter>Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Boom.h">
+      <Filter>Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Animations.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueFire.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="BrickPink.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Chain.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Cogwheel.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CogwheelSmall.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Conveyor.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="InclinedBrick.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Medicine.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Star.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Swing.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Tube.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Zone.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEventHandler.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadtree.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Gimmick.h">
+      <Filter>Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="GimmickDieEffect.h">
+      <Filter>Gimmick</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Enermy">
+      <UniqueIdentifier>{49bcc7ab-c161-4f09-9f1d-1b8b90c524d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f865ae16-4481-4010-9f80-6a889b0f5a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{57c4217e-753e-40b7-82a4-58991bf49930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gimmick">
+      <UniqueIdentifier>{eda7135c-b3f9-4190-9d07-84fc63beaeb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

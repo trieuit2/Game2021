@@ -1,0 +1,88 @@
+#pragma once
+#include "GameObject.h"
+#include "Utils.h"
+
+
+
+class CGimmickDieEffect : public CGameObject
+{
+public:
+	CGimmickDieEffect(int direction) : CGameObject()
+	{
+		switch (direction)
+		{
+		case 0:
+			vx = 0;
+			vy = GIMMICKDIEEFFECT_SPEED;
+			break;
+		case 1:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			break;
+		case 2:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			break;
+		case 3:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			break;
+		case 4:
+			vx = GIMMICKDIEEFFECT_SPEED;
+			vy = 0;
+			break;
+		case 5:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			break;
+		case 6:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			break;
+		case 7:
+			vx = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			break;
+		case 8:
+			vx = 0;
+			vy = -GIMMICKDIEEFFECT_SPEED;
+			break;
+		case 9:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			break;
+		case 10:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			break;
+		case 11:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			vy = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			break;
+		case 12:
+			vx = -GIMMICKDIEEFFECT_SPEED;
+			vy = 0;
+			break;
+		case 13:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			break;
+		case 14:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_450;
+			break;
+		case 15:
+			vx = -GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_675;
+			vy = GIMMICKDIEEFFECT_SPEED * GIMMICKDIEEFFECT_SPEED_225;
+			break;
+		default:
+			break;
+		}
+	}
+	~CGimmickDieEffect() {}
+	virtual void Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects);
+	virtual void Render();
+	void SetState(int state);
+	virtual void GetBoundingBox(float& l, float& t, float& r, float& b);
+};
+

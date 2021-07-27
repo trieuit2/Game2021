@@ -1,14 +1,14 @@
 /* =============================================================
 	INTRODUCTION TO GAME PROGRAMMING SE102
-	
+
 	SAMPLE 05 - SCENCE MANAGER
 
 	This sample illustrates how to:
 
-		1/ Implement a scence manager 
-		2/ Load scene from "database", add/edit/remove scene without changing code 
-		3/ Dynamically move between scenes without hardcode logic 
-		
+		1/ Implement a scence manager
+		2/ Load scene from "database", add/edit/remove scene without changing code
+		3/ Dynamically move between scenes without hardcode logic
+
 ================================================================ */
 
 #include <windows.h>
@@ -19,23 +19,20 @@
 #include "Game.h"
 #include "GameObject.h"
 #include "Textures.h"
-
-#include "Mario.h"
 #include "Brick.h"
-#include "Goomba.h"
 
-#include "PlayScence.h"
+#include "PlayScene.h"
 
-#define WINDOW_CLASS_NAME L"Mr. Gimmick"
-#define MAIN_WINDOW_TITLE L"Mr. Gimmick NES"
+#define WINDOW_CLASS_NAME L"SampleWindow"
+#define MAIN_WINDOW_TITLE L"GIMMICK NES"
 
-#define BACKGROUND_COLOR D3DCOLOR_XRGB(255, 255, 200)
-#define SCREEN_WIDTH 320
-#define SCREEN_HEIGHT 240
+#define BACKGROUND_COLOR D3DCOLOR_XRGB(0, 0, 0)
+#define SCREEN_WIDTH 271
+#define SCREEN_HEIGHT 230
 
 #define MAX_FRAME_RATE 120
 
-CGame *game;
+CGame* game;
 
 LRESULT CALLBACK WinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -60,7 +57,7 @@ void Update(DWORD dt)
 }
 
 /*
-	Render a frame 
+	Render a frame
 */
 void Render()
 {
@@ -77,7 +74,7 @@ void Render()
 
 		CGame::GetInstance()->GetCurrentScene()->Render();
 
-		spriteHandler->End();
+   		spriteHandler->End();
 		d3ddv->EndScene();
 	}
 
@@ -119,7 +116,7 @@ HWND CreateGameWindow(HINSTANCE hInstance, int nCmdShow, int ScreenWidth, int Sc
 			hInstance,
 			NULL);
 
-	if (!hWnd) 
+	if (!hWnd)
 	{
 		OutputDebugString(L"[ERROR] CreateWindow failed");
 		DWORD ErrCode = GetLastError();
@@ -151,8 +148,6 @@ int Run()
 
 		DWORD now = GetTickCount();
 
-		// dt: the time between (beginning of last frame) and now
-		// this frame: the frame we are about to render
 		DWORD dt = now - frameStart;
 
 		if (dt >= tickPerFrame)
@@ -160,12 +155,12 @@ int Run()
 			frameStart = now;
 
 			game->ProcessKeyboard();
-			
+
 			Update(dt);
 			Render();
 		}
 		else
-			Sleep(tickPerFrame - dt);	
+ 			Sleep(tickPerFrame - dt);
 	}
 
 	return 1;
@@ -179,9 +174,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	game->Init(hWnd);
 	game->InitKeyboard();
 
-	game->Load(L"mario-sample.txt");
+	game->Load(L"StateMap.txt");
 
-	SetWindowPos(hWnd, 0, 0, 0, SCREEN_WIDTH*2, SCREEN_HEIGHT*2, SWP_NOMOVE | SWP_NOOWNERZORDER | SWP_NOZORDER);
+	SetWindowPos(hWnd, 0, 0, 0, SCREEN_WIDTH * 3, SCREEN_HEIGHT * 3, SWP_NOMOVE | SWP_NOOWNERZORDER | SWP_NOZORDER);
 
 	Run();
 

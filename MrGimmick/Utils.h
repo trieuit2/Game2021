@@ -9,14 +9,13 @@
 #include <time.h>
 #include <stdlib.h>
 #include <vector>
-
+#include <string>
 
 using namespace std;
 
-void DebugOut(wchar_t *fmt, ...);
+void DebugOut(wchar_t* fmt, ...);
 
 vector<string> split(string line, string delimeter = "\t");
 wstring ToWSTR(string st);
 
 LPCWSTR ToLPCWSTR(string st);
-
